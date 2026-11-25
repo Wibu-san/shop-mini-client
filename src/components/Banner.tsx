@@ -3,8 +3,8 @@ export default function Banner() {
     <section className="container">
       <div className="banner">
         <div className="banner-content">
-          <h2>Siêu ưu đãi công nghệ & phụ kiện</h2>
-          <p>Giảm ngay đến 20% cho đơn hàng đầu tiên trong tuần này tại ShopMini.</p>
+          <h2>Siêu ưu đãi Game và Thiết bị</h2>
+          <p>Giảm 30% hôm nay</p>
           <button className="btn banner-btn">Mua ngay</button>
         </div>
       </div>
