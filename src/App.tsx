@@ -9,6 +9,7 @@ function App() {
     <>
       <Header />
       <main>
+        <Banner/>
         <ProductList title="Sản phẩm nổi bật" items={products} />
       </main>
       <Footer />

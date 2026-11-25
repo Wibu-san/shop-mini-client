@@ -135,3 +135,39 @@ main {
     display: none;
   }
 }
+/* ---------- Banner ---------- */
+.banner {
+  background: linear-gradient(135deg, #0f1b2d 0%, #1f5fd1 100%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 32px;
+  margin-bottom: 28px;
+}
+
+.banner-content {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.banner h2 {
+  font-size: 26px;
+}
+
+.banner p {
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.banner-btn {
+  background: #f59e0b;
+  color: #0f1b2d;
+  padding: 10px 20px;
+  margin-top: 4px;
+}
+
+.banner-btn:hover {
+  background: #d97706;
+}
