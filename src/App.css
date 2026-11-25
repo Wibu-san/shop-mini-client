@@ -27,6 +27,7 @@ a {
   color: #fff;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .header-inner {
@@ -71,6 +72,7 @@ main {
 }
 
 .product-card {
+  position: relative;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -170,4 +172,117 @@ main {
 
 .banner-btn:hover {
   background: #d97706;
+}
+/* ---------- CategoryList ---------- */
+.category-section {
+  margin-bottom: 24px;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.category-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-pill:hover {
+  background: #1f5fd1;
+  color: #fff;
+  border-color: #1f5fd1;
+}
+/* Tìm class .product-card có sẵn và thêm dòng position: relative; */
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+/* Thêm vào cuối file App.css */
+.out-of-stock-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+/* ---------- CategoryList ---------- */
+.category-section {
+  margin-bottom: 24px;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.category-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-pill:hover {
+  background: #1f5fd1;
+  color: #fff;
+  border-color: #1f5fd1;
+}
+
+/* ---------- Trạng thái hết hàng ---------- */
+.out-of-stock-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
 }
