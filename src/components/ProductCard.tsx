@@ -1,4 +1,5 @@
 import type { Product } from "../data/products";
+import { formatPrice } from "../utils/format";
 
 type Props = {
   product: Product;
@@ -14,9 +15,7 @@ export default function ProductCard({ product }: Props) {
       <div className="product-body">
         <span className="product-category">{product.category}</span>
         <h3>{product.name}</h3>
-        <p className="product-price">
-          {product.price.toLocaleString("vi-VN")} đ
-        </p>
+        <p className="product-price">{formatPrice(product.price)}</p>
         <button className="btn" disabled={isOutOfStock}>
           {isOutOfStock ? "Hết hàng" : "Thêm vào giỏ"}
         </button>

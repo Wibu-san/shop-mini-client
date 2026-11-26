@@ -286,3 +286,30 @@ main {
   background: #9ca3af;
   cursor: not-allowed;
 }
+/* ---------- Lab 2 ---------- */
+/* ---------- Chia từng khúc sản phẩm ---------- */
+body {
+  background: #f1f5f9;
+}
+
+main > section.container:has(.product-grid) {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-top: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+main > section.container:has(.product-grid) h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.product-card {
+  border: 1px solid #e2e8f0;
+}
